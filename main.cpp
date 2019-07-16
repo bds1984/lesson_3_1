@@ -6,7 +6,7 @@
 
 int main()
 {
-	try
+	 try
 	{
 		type_storage ip_pool;
 
