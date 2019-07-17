@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test_version
+#define BOOST_TEST_MODULE my_test
 
 #include "ip_filter.h"
 
