@@ -26,9 +26,12 @@ vct.resize(0);
   }
 lexografsort(pool); 
   vct.resize(0);
-  vct=pool[0];
-BOOST_CHECK(pool.size()>0);
- 
+  int x{4}
+for(int i=4;i>-1;=--1){
+ vct=pool[i];
+BOOST_CHECK(  vct[1]==x);
+  --x;
+} 
 
 
 }
