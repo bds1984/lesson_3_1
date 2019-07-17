@@ -14,12 +14,12 @@ BOOST_CHECK(v_test.size()==4);
 std::vector<std::vector<std::string>> pool;
 std::vector<std::string> vct;
   for(int i=0;i<5;++i){
-  vct.emplace_back(i);
-    vct.emplace_back(i);
-      vct.emplace_back(i);
-       vct.emplace_back(i);
+  vct.emplace_back(std::to_string(i));
+    vct.emplace_back(std::to_string(i));
+      vct.emplace_back(std::to_string(i));
+       vct.emplace_back(std::to_string(i));
     pool.emplace_back(vct);
-
+vct.resize(0);
   }
 
 BOOST_CHECK(pool.size()>0);
