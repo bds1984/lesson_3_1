@@ -29,7 +29,7 @@ lexografsort(pool);
   int x{4}
 for(int i=0;i<5;++i){
  vct=pool[i];
-BOOST_CHECK(  vct[1]==x);
+BOOST_CHECK(std::stoi(vct[1])==x);
   --x;
 } 
 
