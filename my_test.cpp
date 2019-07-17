@@ -25,10 +25,7 @@ std::vector<std::string> vct;
 vct.resize(0);
   }
 lexografsort(pool); 
-
-  for (const auto iter : pool){
-   BOOST_CHECK(std::stoi(*iter.cbegin())>0)  
-
+BOOST_CHECK(pool.size()>0);
   }
 
 
