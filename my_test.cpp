@@ -19,7 +19,7 @@ std::vector<std::string> vct;
       vct.emplace_back(i);
        vct.emplace_back(i);
     pool.emplace_back(vct);
-    vct.resize(0);
+
   }
 
 BOOST_CHECK(pool.size()>0);
