@@ -25,6 +25,8 @@ std::vector<std::string> vct;
 vct.resize(0);
   }
 lexografsort(pool); 
+  vct.resize(0);
+  vct=pool[0];
 BOOST_CHECK(pool.size()>0);
  
 
