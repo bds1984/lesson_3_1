@@ -10,7 +10,10 @@ BOOST_AUTO_TEST_CASE(test_split)
 {
 std::vector<std::string> v_test= split("1.1.1.1",'.');   
 BOOST_CHECK(v_test.size()==4);
-  
+}
+
+BOOST_AUTO_TEST_CASE(test_lexograf)
+{  
 std::vector<std::vector<std::string>> pool;
 std::vector<std::string> vct;
   for(int i=0;i<5;++i){
@@ -21,10 +24,14 @@ std::vector<std::string> vct;
     pool.emplace_back(vct);
 vct.resize(0);
   }
+lexografsort(pool);  
+ int i{4}; 
+  for (const auto iter : pool){
+   BOOST_CHECK(std::stoi(*iter.cbegin())==i)  
+     --i;
+  }
 
-BOOST_CHECK(pool.size()>0);
 }
-
 }
 
 
