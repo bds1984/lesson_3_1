@@ -26,7 +26,7 @@ vct.resize(0);
   }
 lexografsort(pool); 
 BOOST_CHECK(pool.size()>0);
-  }
+ 
 
 
 }
